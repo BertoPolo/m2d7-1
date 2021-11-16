@@ -17,12 +17,12 @@
 <head>
     <style>
         /*
-           - EX1) Write a selector to target the h1 in jumbotron 
-            -EX2) Write a selector to target every children of the navbar
-            EX3) Write a selector to target the "continue reading..." inside the jumbotron
-            EX4) Write a selector to target the first blogpost
-            EX5) Write a selector to target the "even" links in the navbar
-            EX6) Write a selector to target the last blog post
+           
+            
+            
+          
+            
+        
             EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
             EX8) Write a selector to target the second post author
             EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
@@ -57,21 +57,35 @@
                 font-size: 3.5rem;
             }
         }
+        /* - EX1) Write a selector to target the h1 in jumbotron  */
         div.jumbotron.p-4.p-md-5.text-white.rounded.bg-dark>div>h1{
             background-color: brown;
         }
 
-        div.nav-scroller.py-1.mb-2>nav.nav.d-flex.justify-content-between>a{
+        /* -EX2) Write a selector to target every children of the navbar */
+        nav.nav.d-flex.justify-content-between>a{
             background-color: brown;
         }
 
+        /* -EX3) Write a selector to target the "continue reading..." inside the jumbotron */
         a.text-white.font-weight-bold{
             background: brown;
         }
-        a[href^="#"][href$=".org"]{
-
-        }
         
+        /* -EX4) Write a selector to target the first blogpost */
+        
+        main.container>div>div>div.blog-post:first-child{
+            background: brown;
+      }
+
+        /* EX5) Write a selector to target the "even" links in the navbar */
+        .nav.d-flex.justify-content-between>a:nth-child(even){
+            background: black;
+        }
+        /* EX6) Write a selector to target the last blog post
+         */
+
+
     </style>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet" />
 </head>
@@ -100,6 +114,7 @@
                 </div>
             </div>
         </header>
+        
 
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
