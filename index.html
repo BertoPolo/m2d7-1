@@ -15,20 +15,7 @@
     -->
 
 <head>
-    <style>
-        /*
-           
-            
-            
-          
-            
-        
-            EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
-            EX8) Write a selector to target the second post author
-            EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
-            EX10) Write a selector to target the footer
-        */
-    </style>
+ 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
@@ -74,7 +61,7 @@
         
         /* -EX4) Write a selector to target the first blogpost  FAILED*/
         
-        main.container>div>div>div.blog-post:first-child{
+        main.container>div>div> div.blog-post:last-child{
             background: brown;
       }
 
@@ -82,10 +69,14 @@
         .nav.d-flex.justify-content-between>a:nth-child(even){
             background: black;
         }
-        /* EX6) Write a selector to target the last blog post
-         */
-
-
+        /* EX6) Write a selector to target the last blog post FAILED*/
+         main.container>div>div> div.blog-post:last-child{
+            background: brown;
+      }
+      /* EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives ) */
+      /* EX8) Write a selector to target the second post author */
+            /* EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly */
+            /* EX10) Write a selector to target the footer */
     </style>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet" />
 </head>
